@@ -1,18 +1,36 @@
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RPS Console Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body style="text-align: center;">
     <h1>Rock Paper Scissors Game</h1>
-    <p><span style="color: rgb(0, 85, 255);">To play the game, open the console.</span> To open the console, 
-      use Ctrl+Shift+J (Windows/Linux) or Cmd+Option+J (macOS) 
-      for most browsers, or right-click the page and select "Inspect" 
-      then the "Console" tab;
-    </p>
+    <p><span style="color: blue;">Click on any Items below. NOTE: You are playing against a computer and you have 5 rounds per game.</span></p>
 
-    <script src="app.js"></script>
+    <h3>Choose from the items below: <span style="color:whitesmoke ;">Rock <span style="color: rgb(0, 85, 255);">|</span> Paper <span style="color: rgb(0, 85, 255);">|</span> Scissors</span></h3>
+    <div id="rpsChoices"></div>
+
+    <div id="wrapper">
+     <div id="wrapper-contents">
+       <h2>Human Score</h2>
+      <div id="human"></div>
+     </div>
+     <div id="wrapper-contents">
+        <h2>Computer Score</h2>
+      <div id="computer"></div>
+     </div>
+    </div>
+
+    <div class="result"></div>
+    <div id="rounds"></div>
+
+    <!-- <script src="app.js"></script> -->
+    <script src="main.js"></script>
 </body>         
 </html>
+
+
